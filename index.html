@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud e Formulario</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+</head>
+<body>
+  <h1>An Market Idea</h1>
+  <div class="option-container">
+    <button class="option-btn active" id="client">Clientes</button>
+    <button class="option-btn option-prod" id="product">Produtos</button>
+  </div>
+  <div class="tabela-cliente">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Data de Nascimento</th>
+          <th>Telefone</th>
+          <th>CPF</th>
+          <th>CEP</th>
+          <th>Logradouro</th>
+          <th>Cidade</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-item">
+        <tr class="item">
+          <td class="item-id">1</td>
+          <td class="item-nome">Arnaldo da Silva</td>
+          <td class="item-data">10/02/1990</td>
+          <td class="item-tel">(41) 99475-7563</td>
+          <td class="item-cpf">126.689.479-92</td>
+          <td class="item-cep">80060120</td>
+          <td class="item-logradouro">790</td>
+          <td class="item-cidade">Curitiba</td>
+          <td class="item-estado">Paraná</td>
+        </tr>
+        <tr class="item">
+          <td class="item-id">2</td>
+          <td class="item-nome">Arnaldo da Silva</td>
+          <td class="item-data">10/02/1990</td>
+          <td class="item-tel">(41) 99475-7563</td>
+          <td class="item-cpf">126.689.479-92</td>
+          <td class="item-cep">80060120</td>
+          <td class="item-logradouro">790</td>
+          <td class="item-cidade">Curitiba</td>
+          <td class="item-estado">Paraná</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="crud-btns">
+      <a href="clientForm.html"><span class="material-symbols-outlined" id="add">add</span></a>
+      <span class="material-symbols-outlined" id="delete">delete</span>
+      <span class="material-symbols-outlined" id="edit">edit</span>
+    </div>
+  </div>
+  <div class="tabela-produto">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Marca</th>
+          <th>Peso</th>
+          <th>Qtd</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-item">
+        <tr class="item">
+          <td class="item-nome">Refrigerante Coca-Cola Byte</td>
+          <td class="item-marca">Coca-Cola</td>
+          <td class="item-peso">310ml</td>
+          <td class="item-qtd">50</td>
+          <td class="item-preco">5,90</td>
+        </tr>
+        <tr class="item">
+          <td class="item-nome">Refrigerante Coca-Cola Byte</td>
+          <td class="item-marca">Coca-Cola</td>
+          <td class="item-peso">310ml</td>
+          <td class="item-qtd">50</td>
+          <td class="item-preco">5,90</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="crud-btns">
+      <a href="#"><span class="material-symbols-outlined">add</span></a>
+      <span class="material-symbols-outlined">delete</span>
+      <span class="material-symbols-outlined">edit</span>
+    </div>
+  </div>
+  <script src="js/add.js"></script>
+  <script src="js/active.js"></script>
+</body>
+</html>

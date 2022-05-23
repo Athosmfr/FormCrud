@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5% 0;
+  background-color: #006E7F;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.option-btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  z-index: 2;
+  position: relative;
+  border: 2px solid black;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.option-prod {
+  position: relative;
+  margin-left: 10px;
+  left: -20px;
+  z-index: 1;
+}
+
+.tabela-cliente {
+  display: flex;
+}
+
+.tabela-produto {
+  display: none;
+}
+
+table {
+  width: 60%;
+  margin: 0 20%;
+  margin-right: 0;
+  padding: 10px 0;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+
+th {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.crud-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: black;
+}
+
+.material-symbols-outlined {
+  margin: 0px 5px 10px 15px;
+  border: 2px solid black;
+  height: fit-content;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px black;
+}
+
+.material-symbols-outlined:active {
+  background-color: grey;
+}
+
+.active {
+  background-color: rgb(180, 180, 180);
+  font-size: 16px;
+  height: 32px;
+}
+
+#add {
+  background-color: rgb(90, 200, 0);
+}
+
+#add:active {
+  background-color: rgb(90, 150, 0);
+}
+
+#delete {
+  background-color: rgb(255, 0, 20);
+}
+
+#delete:active {
+  background-color: rgb(150, 0, 20);
+}
+
+#edit {
+  background-color: rgb(0, 140, 255);
+}
+
+#edit:active {
+  background-color: rgb(0, 70, 127);
+}

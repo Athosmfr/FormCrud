@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Clientes</title>
+  <link rel="stylesheet" href="clientForm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+    <h1 class="form-title">Cadastro de Clientes</h1>
+    <form class="form">
+    <div class="input-info">
+      <label class="label" for="name">Nome:</label>
+      <input class="input" type="text" name="name" placeholder="Insira o Nome" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="data">Data de Nascimento:</label>
+      <input class="input" type="text" name="data" id="data" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d{2}" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="tel">Telefone:</label>
+      <input class="input" id="tel" type="tel" name="tel" placeholder="(__) _____-____" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="cpf">CPF:</label>
+      <input class="input" name="cpf" id="cpf" type="text" placeholder="Insira o CPF" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="cep">CEP:</label>
+      <input class="input" name="cep" id="cep" type="text" placeholder="Insira o CEP" data-tipo="cep" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="rua">Rua:</label>
+      <input class="input" id="rua" type="text" name="rua" minlength="1" placeholder="Endereço" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="log">Logradouro:</label>
+      <input class="input" name="logradouro" type="text" placeholder="nº" minlength="1" maxlength="5" data-tipo="logradouro" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="cidade">Cidade:</label>
+      <input class="input" id="cidade" type="text" name="cidade" minlength="1" data-tipo="cidade" placeholder="Cidade" required>
+    </div>
+    <div class="input-info">
+      <label class="label" for="estado">Estado:</label>
+      <input class="input" id="uf" type="text" name="uf" minlength="1" placeholder="Estado"  data-tipo="estado" required>
+    </div>
+    <div class="btns">
+      <button type="submit" class="submit">Enviar</button>
+      <button class="submit"><a class="cancel-btn" href="index.html">Cancelar</a></button>
+    </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/add.js"></script>
+  <script src="js/jquery.mask.js"></script>
+  <script src="js/validacao.js"></script>
+</body>
+</html>
